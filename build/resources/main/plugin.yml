@@ -1,0 +1,11 @@
+name: Skywars
+version: '1.0-SNAPSHOT'
+main: ngmu.skywars.Skywars
+api-version: '1.21'
+commands:
+  addmap:
+    description: Add a map to the Skywars plugin
+    usage: /addmap <mapname> <x1> <y1> <z1> <x2> <y2> <z2>
+  pastemap:
+    description: Paste a map into the world
+    usage: /pastemap <mapname>

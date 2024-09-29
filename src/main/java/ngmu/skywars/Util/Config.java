@@ -5,7 +5,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.block.data.BlockData;
 import org.bukkit.plugin.Plugin;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;

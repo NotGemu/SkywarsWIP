@@ -3,7 +3,6 @@ package ngmu.skywars.Commands;
 import ngmu.skywars.Map.Map;
 import ngmu.skywars.Util.Config;
 import org.bukkit.Location;
-import org.bukkit.block.Block;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -41,21 +40,6 @@ public class AddMap implements CommandExecutor {
                 }
             }
         }
-
-        /*
-        for (int x = 0; x < xLen; x++) {
-            for (int y = 0; y < yLen; y++) {
-                for (int z = 0; z < zLen; z++) {
-                    Location location = new Location(player.getWorld(), start.x + x, start.y + y, start.z + z);
-                    blocks[x][y][z] = location.getBlock();
-                    System.out.println("Saving " + location.getBlock().getType().name() + " at " + (start.x + x) + ", " + (start.y + y) + ", " + (start.z + z));
-                    System.out.println(player.getWorld().getBlockAt(location));
-                    System.out.println(player.getWorld().getBlockAt(start.x + x, start.y + y, start.z + z));
-                }
-            }
-        }
-
-         */
 
         if (Config.addMap(new Map(strings[0], blocks))) {
             player.sendMessage("Map added successfully!");

@@ -2,11 +2,9 @@ package ngmu.skywars;
 
 import ngmu.skywars.Commands.AddMap;
 import ngmu.skywars.Commands.PasteMap;
-import ngmu.skywars.Map.Map;
 import ngmu.skywars.Util.Config;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
-import java.util.ArrayList;
 import java.util.Objects;
 
 public final class Skywars extends JavaPlugin {
